@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/goclever/rkr70sdk/BoardConfigVendor.mk
+-include vendor/rockchip/rk2928/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -22,14 +22,14 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 536870912
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1073741824
 BOARD_FLASH_BLOCK_SIZE := 4096
 
-TARGET_PREBUILT_KERNEL := device/goclever/rkr70sdk/kernel
+TARGET_PREBUILT_KERNEL := device/rockchip/rk2928/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_PROVIDES_INIT := true
-TARGET_RECOVERY_INITRC := device/goclever/rkr70sdk/recovery/init.rc
-BOARD_CUSTOM_BOOTIMG_MK := device/goclever/rkr70sdk/rkcrc_sign.mk
+TARGET_RECOVERY_INITRC := device/rockchip/rk2928/recovery/init.rc
+BOARD_CUSTOM_BOOTIMG_MK := device/rockchip/rk2928/rkcrc_sign.mk
 
 TARGET_BOARD_PLATFORM_GPU := mali400
 DEVICE_RESOLUTION := 800x480
@@ -49,11 +49,11 @@ BOARD_USES_GENERIC_AUDIO := false
 BOARD_USES_ALSA_AUDIO := true
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/goclever/rkr70sdk/releasetools
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/goclever/rkr70sdk/releasetools/rk292x_ota_from_target_files
+TARGET_RELEASETOOLS_EXTENSIONS := device/rockchip/rk2928/releasetools
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/rockchip/rk2928/releasetools/rk292x_ota_from_target_files
 
 # Graphics
-BOARD_EGL_CFG := vendor/goclever/rkr70sdk/proprietary/system/lib/egl/egl.cfg
+BOARD_EGL_CFG := vendor/rockchip/rk2928/proprietary/system/lib/egl/egl.cfg
 USE_OPENGL_RENDERER := true
 TARGET_DISABLE_TRIPLE_BUFFERING := true
 ENABLE_WEBGL := true
