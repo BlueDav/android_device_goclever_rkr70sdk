@@ -1,15 +1,15 @@
-android_device_goclever_rkr70sdk
+android_device_rockchip_rk2928
 ================================
 
-CM build parameters for GOCLEVER TAB R70 (Rockchip RK2926). For building, you'll also need tools from here: https://github.com/rk3066/rk-tools
+CM build parameters for Trevi Tab 7 V4 Internet Wi-Fi (Rockchip RK2928). For building, you'll also need tools from here: https://github.com/rk3066/rk-tools
 
 6.0.2.8 CWM
 ===========
 Please note that in order to build CWM for Rockchip, You also need to replace
-stock CWM with custom CWM found here: https://github.com/Shmarkus/android_bootable_recovery
+stock CWM with custom CWM found here: https://github.com/BlueDav/android_bootable_recovery
 - USB mount does not work
 
-Android 4.1.2 
+Android 4.1.2
 =============
 Works:
 - Touchscreen
