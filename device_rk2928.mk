@@ -3,12 +3,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/goclever/rkr70sdk/rkr70sdk-vendor.mk)
+$(call inherit-product-if-exists, vendor/rockchip/rk2928/rk2928-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/goclever/rkr70sdk/overlay
-VENDOR_PATH := vendor/goclever/rkr70sdk
+DEVICE_PACKAGE_OVERLAYS += device/rockchip/rk2928/overlay
+VENDOR_PATH := vendor/rockchip/rk2928
 
-LOCAL_PATH := device/goclever/rkr70sdk
+LOCAL_PATH := device/rockchip/rk2928
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
@@ -105,5 +105,5 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 
 $(call inherit-product, frameworks/native/build/tablet-dalvik-heap.mk)
 
-PRODUCT_NAME := full_rkr70sdk
-PRODUCT_DEVICE := rkr70sdk
+PRODUCT_NAME := full_rk2928
+PRODUCT_DEVICE := rk2928
