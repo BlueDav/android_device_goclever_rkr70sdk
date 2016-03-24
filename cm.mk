@@ -2,18 +2,18 @@
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := rkr70sdk
+PRODUCT_RELEASE_NAME := rk2928
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/goclever/rkr70sdk/device_rkr70sdk.mk)
+$(call inherit-product, device/rockchip/rk2928/device_rk2928.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := rkr70sdk
-PRODUCT_NAME := cm_rkr70sdk
-PRODUCT_BRAND := rkr70sdk
-PRODUCT_MODEL := GOCLEVER TAB R70
+PRODUCT_DEVICE := rk2928
+PRODUCT_NAME := cm_rk2928
+PRODUCT_BRAND := trevi
+PRODUCT_MODEL := TAB 7 V4
 PRODUCT_MANUFACTURER := rockchip
 PRODUCT_CHARACTERISTICS := tablet
