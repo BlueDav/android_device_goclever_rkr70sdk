@@ -20,5 +20,5 @@
 # In particular, you can add lunch options with the add_lunch_combo
 # function: add_lunch_combo generic-eng
 
-add_lunch_combo cm_rkr70sdk-userdebug
-add_lunch_combo full_rkr70sdk-userdebug
+add_lunch_combo cm_rk2928-userdebug
+add_lunch_combo full_rk2928-userdebug
