@@ -31,7 +31,7 @@ on init
     write /sys/class/android_usb/android0/iSerial ${ro.serialno}
     
 on boot
-    setprop UserVolumeLabel "TAB R70"
+    setprop UserVolumeLabel "Trevi Tab 7 V4"
     setprop InternalSD_ROOT "/mnt/sdcard"
     setprop ExternalSD_ROOT "/mnt/external_sd"
     ifup lo
