@@ -130,10 +130,10 @@ loglevel 3
 on fs
     insmod /rk292xnand_ko.ko
     # mount  partitions
-    mount ext4 mtd@system /system 
-	mount ext4 mtd@system /system ro remount
-    mount ext4 mtd@userdata /data nosuid nodev 
-    mount ext4 mtd@cache /cache nosuid nodev 
+    mount ext3 mtd@system /system 
+	mount ext3 mtd@system /system ro remount
+    mount ext3 mtd@userdata /data nosuid nodev 
+    mount ext3 mtd@cache /cache nosuid nodev 
 
     insmod /system/lib/modules/ump.ko
     insmod /system/lib/modules/mali.ko
@@ -385,7 +385,7 @@ on nonencrypted
 on charger
     insmod /rk292xnand_ko.ko
     # mount mtd partitions
-    mount ext4 mtd@userdata /data wait noatime nodiratime nosuid nodev noauto_da_alloc
+    mount ext3 mtd@userdata /data wait noatime nodiratime nosuid nodev noauto_da_alloc
     class_start charger
 
 on property:vold.decrypt=trigger_reset_main
