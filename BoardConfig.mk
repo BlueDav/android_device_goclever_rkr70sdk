@@ -70,13 +70,18 @@ TARGET_EXTRA_CFLAGS += $(call cc-option,-mtune=cortex-a9,$(call cc-option,-mtune
 TARGET_EXTRA_CPPFLAGS += $(call cc-option,-mtune=cortex-a9,$(call cc-option,-mtune=cortex-a8)) $(call cc-option,-mcpu=cortex-a9,$(call cc-option,-mcpu=cortex-a8))
 
 # Wifi stuff
-BOARD_WIFI_VENDOR                := realtek
-WPA_SUPPLICANT_VERSION           := VER_0_8_X
-BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_rtl
-BOARD_HOSTAPD_DRIVER             := NL80211
-BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_rtl
-BOARD_WLAN_DEVICE                := rtl8188eu
-
-WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/8188eu.ko"
-WIFI_DRIVER_MODULE_NAME          := wlan
+BOARD_WIFI_VENDOR := broadcom
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_WPA_SUPPLICANT_DRIVER := WEXT
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
+BOARD_HOSTAPD_DRIVER		:= NL80211
+BOARD_HOSTAPD_PRIVATE_LIB	:= lib_driver_cmd_bcmdhd
+BOARD_WLAN_DEVICE := bcmdhd
+WIFI_DRIVER_MODULE_NAME   := wlan
+WIFI_DRIVER_MODULE_PATH   := "/system/lib/modules/wlan.ko"
+#WIFI_DRIVER_MODULE_ARG    := ""
+#WIFI_FIRMWARE_LOADER      := ""
+#WIFI_DRIVER_FW_PATH_STA   := ""
+WIFI_DRIVER_FW_PATH_AP    := "/system/etc/firmware/fw_bcm4329_apsta.bin"
+WIFI_DRIVER_FW_PATH_P2P   := "/system/etc/firmware/fw_bcm4329_p2p.bin"
+WIFI_DRIVER_FW_PATH_PARAM := "/system/etc/firmware/fw_bcm4329.bin"
