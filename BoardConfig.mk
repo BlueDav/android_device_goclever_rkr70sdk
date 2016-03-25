@@ -54,7 +54,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/rockchip/rk2928/releasetools
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/rockchip/rk2928/releasetools/rk292x_ota_from_target_files
 
 # Graphics
-BOARD_EGL_CFG := vendor/rockchip/rk2928/proprietary/lib/egl/egl.cfg
+BOARD_EGL_CFG := vendor/rockchip/rk2928/proprietary/system/lib/egl/egl.cfg
 USE_OPENGL_RENDERER := true
 TARGET_DISABLE_TRIPLE_BUFFERING := true
 ENABLE_WEBGL := true
