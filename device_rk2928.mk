@@ -56,8 +56,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
-    $(VENDOR_PATH)/proprietary/etc/permissions/features.xml:system/etc/permissions/features.xml \
-    $(VENDOR_PATH)/proprietary/etc/permissions/platform.xml:system/etc/permissions/platform.xml
+    $(VENDOR_PATH)/proprietary/system/etc/permissions/features.xml:system/etc/permissions/features.xml \
+    $(VENDOR_PATH)/proprietary/system/etc/permissions/platform.xml:system/etc/permissions/platform.xml
 
 # Publish that we support the live wallpaper feature.
 PRODUCT_PACKAGES += \
@@ -99,7 +99,7 @@ PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
     
 PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/proprietary/etc/vold.fstab:system/etc/vold.fstab     
+    $(VENDOR_PATH)/proprietary/system/etc/vold.fstab:system/etc/vold.fstab     
     
 PRODUCT_TAGS += dalvik.gc.type-precise
 
