@@ -5,30 +5,26 @@ Partition layout for Android:
   31        0       4096 mtdblock0  misc
   31        1       8192 mtdblock1  kernel
   31        2      16384 mtdblock2  boot
-  31        3      32768 mtdblock3  recovery
-  31        4      65536 mtdblock4  backup
-  31        5     131072 mtdblock5  cache
-  31        6    1048576 mtdblock6  userdata
+  31        3      16384 mtdblock3  recovery
+  31        4     491520 mtdblock4  backup
+  31        5     118784 mtdblock5  cache
+  31        6     524288 mtdblock6  userdata
   31        7       4096 mtdblock7  kpanic
   31        8     524288 mtdblock8  system
-  31        9    1988608 mtdblock9  user
- 179        0    7774208 mmcblk0
- 179        1    7773184 mmcblk0p1
+  31        9    2193408 mtdblock9  user
 
 Partition layout for Recovery:
   31        0       4096 mtdblock0  parameter
   31        1       4096 mtdblock1  misc
   31        2       8192 mtdblock2  kernel
   31        3      16384 mtdblock3  boot
-  31        4      32768 mtdblock4  recovery
-  31        5      65536 mtdblock5  backup
-  31        6     131072 mtdblock6  cache
-  31        7    1048576 mtdblock7  userdata
+  31        4      16384 mtdblock4  recovery
+  31        5     491520 mtdblock5  backup
+  31        6     118784 mtdblock6  cache
+  31        7     524288 mtdblock7  userdata
   31        8       4096 mtdblock8  kpanic
   31        9     524288 mtdblock9  system
-  31       10    1988608 mtdblock10 user
- 179        0    7774208 mmcblk0
- 179        1    7773184 mmcblk0p1
+  31       10    2193408 mtdblock10  user
 
 0x00000000-0x00002000 : "parameter"
 0x00002000-0x00002000 : "misc"
